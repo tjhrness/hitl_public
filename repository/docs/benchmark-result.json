@@ -1,0 +1,91 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.8",
+  "seconds": 59.72869039999205,
+  "limit_seconds": 60,
+  "passed": true,
+  "criteria": 10,
+  "items": 1000,
+  "raters": 10,
+  "resamples": 10000,
+  "metric_results": 940,
+  "timing_boundary": "Execute including workbook reload, validation, preflight, computation and persistence; excludes initial upload",
+  "selected": {
+    "Criterion 1": [
+      "alpha_nominal",
+      "cohen_kappa",
+      "fleiss_kappa",
+      "gwet_ac1",
+      "raw_agreement"
+    ],
+    "Criterion 2": [
+      "alpha_nominal",
+      "cohen_kappa",
+      "fleiss_kappa",
+      "gwet_ac1",
+      "raw_agreement"
+    ],
+    "Criterion 3": [
+      "alpha_ordinal",
+      "cohen_kappa",
+      "gwet_ac2",
+      "linear_kappa",
+      "quadratic_kappa",
+      "raw_agreement"
+    ],
+    "Criterion 4": [
+      "bland_altman",
+      "icc_absolute",
+      "icc_consistency",
+      "lin_ccc",
+      "mae",
+      "practical_agreement",
+      "rmse"
+    ],
+    "Criterion 5": [
+      "alpha_nominal",
+      "cohen_kappa",
+      "fleiss_kappa",
+      "gwet_ac1",
+      "raw_agreement"
+    ],
+    "Criterion 6": [
+      "alpha_nominal",
+      "cohen_kappa",
+      "fleiss_kappa",
+      "gwet_ac1",
+      "raw_agreement"
+    ],
+    "Criterion 7": [
+      "alpha_ordinal",
+      "cohen_kappa",
+      "gwet_ac2",
+      "linear_kappa",
+      "quadratic_kappa",
+      "raw_agreement"
+    ],
+    "Criterion 8": [
+      "bland_altman",
+      "icc_absolute",
+      "icc_consistency",
+      "lin_ccc",
+      "mae",
+      "practical_agreement",
+      "rmse"
+    ],
+    "Criterion 9": [
+      "alpha_nominal",
+      "cohen_kappa",
+      "fleiss_kappa",
+      "gwet_ac1",
+      "raw_agreement"
+    ],
+    "Criterion 10": [
+      "alpha_nominal",
+      "cohen_kappa",
+      "fleiss_kappa",
+      "gwet_ac1",
+      "raw_agreement"
+    ]
+  }
+}

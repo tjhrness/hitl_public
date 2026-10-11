@@ -1,0 +1,48 @@
+{
+  "release": "0.1.0 release candidate",
+  "examples": [
+    {
+      "file": "blank-template.xlsx",
+      "status": "Header-only template; fill before import"
+    },
+    {
+      "file": "synthetic-binary.xlsx",
+      "status": "Import, type validation and full recommended-metric Execute passed",
+      "items": 60,
+      "raters": 3
+    },
+    {
+      "file": "synthetic-continuous.xlsx",
+      "status": "Import, type validation and full recommended-metric Execute passed",
+      "items": 60,
+      "raters": 3
+    },
+    {
+      "file": "synthetic-mixed.xlsx",
+      "status": "Import, type validation and full recommended-metric Execute passed",
+      "items": 60,
+      "raters": 3
+    },
+    {
+      "file": "synthetic-nominal.xlsx",
+      "status": "Import, type validation and full recommended-metric Execute passed",
+      "items": 60,
+      "raters": 3
+    },
+    {
+      "file": "synthetic-ordinal.xlsx",
+      "status": "Import, type validation and full recommended-metric Execute passed",
+      "items": 60,
+      "raters": 3
+    }
+  ],
+  "privacy_checks": "Allowlisted source; synthetic-only Excel data; no runtime databases, backups, reports, logs, organizational data or personal workspace paths staged",
+  "installer_sha256": "F02CA5D792AE827D163E8A4E1BF14E8893DE5A3FF61F77EAC6C514AFA3E73A16",
+  "visual_review": "All nine worksheets rendered and reviewed",
+  "pending": [
+    "Project license and third-party notices review",
+    "Clean-machine Windows 11 install",
+    "OS-level network-disabled run",
+    "Uninstall retention acceptance"
+  ]
+}

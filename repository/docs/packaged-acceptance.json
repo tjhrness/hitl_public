@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "analysis in worker process",
+    "version",
+    "comparison",
+    "results UI",
+    "drill down",
+    "report privacy",
+    "backup",
+    "restore",
+    "restart"
+  ],
+  "network_isolation": "Must be supplied by the acceptance host or Windows Sandbox"
+}

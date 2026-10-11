@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "inter-rater-analyzer"
+version = "0.1.0"
+description = "Offline, auditable inter-rater variability analysis for Windows 11"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+  "PySide6>=6.10",
+  "numpy>=2.3",
+  "pandas>=2.3",
+  "scipy>=1.16",
+  "statsmodels>=0.14.5",
+  "openpyxl>=3.1.5",
+  "matplotlib>=3.10",
+  "python-docx>=1.2",
+  "reportlab>=4.4",
+  "pypdf>=6",
+  "pillow>=11",
+]
+
+[project.scripts]
+inter-rater-analyzer = "inter_rater_analyzer.app:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4",
+    "pytest-qt>=4.5",
+    "ruff>=0.14",
+    "pyright>=1.1.407",
+    "types-openpyxl>=3.1.5.20260827",
+    "krippendorff>=0.9.0",
+    "pyinstaller>=6.20",
+    "pypdf>=6",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+qt_api = "pyside6"
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+extend-exclude = [".tools", ".python", ".uv-cache", ".reference"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pyright]
+include = ["src", "scripts"]
+typeCheckingMode = "strict"
+reportUnnecessaryIsInstance = false
+pythonVersion = "3.14"
+venvPath = "."
+venv = ".venv"
